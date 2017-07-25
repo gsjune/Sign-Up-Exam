@@ -44,6 +44,7 @@
         android:inputType="textEmailAddress" />
 
     <RadioGroup
+        android:id="@+id/gender_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -53,10 +54,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:checked="true"
             android:text="남성" />
 
         <RadioButton
-            android:id="@+id/famale_radio_button"
+            android:id="@+id/female_radio_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

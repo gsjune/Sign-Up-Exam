@@ -58,4 +58,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "확인 버튼을 누르셨습니다", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void resetButton(View view) {
+        mIdEditText.getText().toString().equals("");
+        mPasswordEditText.getText().toString().equals("");
+        mPasswordReEditText.getText().toString().equals("");
+        mEmailEditText.getText().toString().equals("");
+
+    }
 }

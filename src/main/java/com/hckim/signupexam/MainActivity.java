@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -32,6 +33,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("password", mPasswordEditText.getText().toString());
         intent.putExtra("email", mEmailEditText.getText().toString());
         startActivityForResult(intent, REQUEST_CODE_ADMIT);
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE_ADMIT && resultCode == RESULT_OK && data != null) {
+            String text = data.getStringExtra("text");
+            Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+        }
     }
 }

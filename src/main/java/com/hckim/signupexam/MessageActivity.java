@@ -1,8 +1,10 @@
 package com.hckim.signupexam;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MessageActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,6 +30,10 @@ public class MessageActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        
+        Intent intent = new Intent();
+        String text = ((Button) view).getText().toString();
+        intent.putExtra("text", text);
+        setResult(RESULT_OK);
+        finish();
     }
 }

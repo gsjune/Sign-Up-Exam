@@ -17,21 +17,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아이디"
-        android:padding="8dp" />
+        android:padding="16dp" />
 
     <EditText
         android:id="@+id/password_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호"
-        android:padding="8dp" />
+        android:inputType="textPassword"
+        android:padding="16dp" />
 
     <EditText
         android:id="@+id/password_re_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호 확인"
-        android:padding="8dp" />
+        android:inputType="textPassword"
+        android:padding="16dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -43,13 +45,13 @@
         android:id="@+id/email_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="이메일" />
+        android:hint="이메일"
+        android:padding="16dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="16dp">
 
         <RadioButton
             android:id="@+id/male_button"

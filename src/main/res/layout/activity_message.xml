@@ -6,6 +6,7 @@
     tools:context="com.hckim.signupexam.MessageActivity">
 
     <Button
+        android:id="@+id/conform_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

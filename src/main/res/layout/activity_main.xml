@@ -13,18 +13,21 @@
         android:text="아이디 및 비밀번호" />
 
     <EditText
+        android:id="@+id/id_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아이디"
         android:padding="8dp" />
 
     <EditText
+        android:id="@+id/password_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호"
         android:padding="8dp" />
 
     <EditText
+        android:id="@+id/password_re_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호 확인"
@@ -37,6 +40,7 @@
         android:text="이메일 및 성별" />
 
     <EditText
+        android:id="@+id/email_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -48,12 +52,14 @@
         android:padding="8dp">
 
         <RadioButton
+            android:id="@+id/male_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="남성" />
 
         <RadioButton
+            android:id="@+id/female_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
